@@ -1,9 +1,10 @@
 import React from 'react';
+import Router from './router/router.js';
 
 const App = () => {
     return (
         <div>
-            <h1>App</h1>
+            <Router/>
         </div>
     )
 }
