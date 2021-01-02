@@ -1,12 +1,12 @@
+import '../router/styles.css';
+
 import React from "react";
-import {
+import { 
   BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
 } from "react-router-dom";
-import { Home } from '../components/home.js';
-import { Scholarships } from '../components/scholarships.js';
+import "./styles.css";
+import Nav from '../components/nav/nav.js';
+import Container from '../components/nav/container.js';
 
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
@@ -21,32 +21,8 @@ export default function BasicExample() {
   return (
     <Router>
       <div>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/scholarships">Scholarships</Link>
-          </li>
-        </ul>
-
-        <hr />
-
-        {/*
-          A <Switch> looks through all its children <Route>
-          elements and renders the first one whose path
-          matches the current URL. Use a <Switch> any time
-          you have multiple routes, but you want only one
-          of them to render at a time
-        */}
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/scholarships">
-            <Scholarships />
-          </Route>
-        </Switch>
+        <Nav />
+        <Container />
       </div>
     </Router>
   );
