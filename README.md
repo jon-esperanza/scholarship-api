@@ -16,7 +16,7 @@ Users will have access to a scholarship database, they will be able to view the 
 
 #### This project will use a self-made REST api. This was possible using the following node.js dependencies: 
 * axios
-* cheerio 
+* cheerio </br>
 This allowed me to webscrape the website: www.collegeofdistinction.com </br> I then pushed this data to MongoDB. Which made it easier to store data for POST and GET calls. </br></br></br>
 
 
