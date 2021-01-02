@@ -2,7 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import connectDB from './db/connection.js';
 import scholarships from './routes/scholarships.js';
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 const api = express();
 
 

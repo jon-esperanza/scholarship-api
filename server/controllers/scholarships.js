@@ -7,7 +7,7 @@ import Scholarship from '../db/Scholarships.js';
 export const getIndex = (req, res) => {
     res.send('Tasks available:' + 
     '\n/all - gets all scholarships in database' +
-    '\n/scrape - webscrapes data and sends to database' + 
+    '\n/scrape - (POSTMAN) webscrapes data and sends to database' + 
     '\n/search/[searchTerm] - search for items in database' + 
     '\n/clear - clears all items in database');
 }
