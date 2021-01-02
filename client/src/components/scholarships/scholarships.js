@@ -1,10 +1,25 @@
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
+
+import { getScholarships } from '../../actions/scholarships.js';
+
+
+
 
 export default function Scholarships() {
+  const dispatch = useDispatch();
+  const scholarships = useSelector((state) => state.scholarships);
+  useEffect(() => {
+    dispatch(getScholarships());
+  }, [dispatch]);
+  console.log(scholarships);
+
+
     return (
         <div>
           <h2>Scholarships</h2>
           <div>
-            <label for="button">Want to make a scholarship submission?</label>
+            <label>Want to make a scholarship submission?</label>
             <button type="button">Click here</button>
           </div>
           <div>

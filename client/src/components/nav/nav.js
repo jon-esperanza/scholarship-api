@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Nav() {
   return (
-    <Wrapper>
+    //<Wrapper>
       <ul>
         <li>
           <Link to="/">Home</Link>
@@ -13,7 +13,7 @@ function Nav() {
           <Link to="/scholarships">Scholarships</Link>
         </li>
       </ul>
-    </Wrapper>
+    //</Wrapper>
   );
 }
 
