@@ -3,7 +3,7 @@
 ## This project involved the following frameworks:
 * MongoDB
 * Express.js
-###### // TODO: React.js
+* React.js
 * node.js </br></br>
 
 ## Passion:
