@@ -19,7 +19,7 @@ export default function Scholarships() {
   console.log(scholarships);
 
   const getSearchData = async(e) => {
-    const searchTerm = e.target.elements.title.value;
+    const searchTerm = e.target.value;
     e.preventDefault();
     dispatch(getSearchResult(searchTerm));
   }
@@ -33,11 +33,13 @@ export default function Scholarships() {
   };
 
     return (
-        <div>
+        <div className="App">
+          <div className="main">
           <h2>Scholarships</h2>
-          <div>
-            <label>Want to make a scholarship submission?</label>
-            <button type="button">Click here</button>
+          </div>
+          <div className="add">
+            <label className="btnLbl">Want to make a scholarship submission?</label><br/>
+            <button className= "click" type="button">Click here</button>
           </div>
           <div>
             <Form getSearchData={getSearchData}/>

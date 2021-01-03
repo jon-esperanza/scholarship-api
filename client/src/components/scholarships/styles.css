@@ -1,11 +1,47 @@
 .App {
-    font-family: sans-serif;
-    text-align: center;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
   }
   
   body {
     background-color: #DED9EF;
   }
+  .main {
+    font-weight: bold;
+    font-size: 1.4em;
+    flex: box;
+    text-align: left;
+    width: 60vw;
+    height: 0vw;
+  }
+  h2 {
+    font-size: 2em;
+    color: rgb(77, 4, 77);
+  }
+  .add {
+    background-color: rgba(110, 65, 133, 0.445);
+    position: relative;
+    width: 20vw;
+    border-radius: .7rem;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+    margin-left: 75%;
+    text-align: center;
+    padding: 10px 10px;
+
+  }
+  .btnLbl {
+    font-size: .9em;
+  }
+  .click {
+    background-color: purple;
+    border-radius: 10px;
+    width: 30%;
+    margin-top: 5%;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
   .Cards{
     justify-content: right;
     padding-left: 15vw;
@@ -33,10 +69,36 @@
     width: 60vw;
     height: 0vw;
   }
+  .searchForm {
+    align-content: center;
+    justify-content: center;
+    padding-top: 10vh;
+    padding-left: 31.5vw;
+    padding-bottom: 10vh;
+    border-radius: .7rem;
+    width: 30rem;
+    position: relative;
+  }
+  .searchBox {
+    font-size: 1.2em;
+    position: relative;
+    appearance: none;
+    height: 4vh;
+    border-radius: .7rem;
+    padding: .1rem 1.6rem;
+    transition: all .3s cubic-bezier(0, 0, 0.43, 1.49);
+    transition-property: width, border-radius;
+    z-index: 1;
+    width: 100%;
+  }
+  .searchBox:focus {
+    outline: none;
+  }
   .button {
     align-content: right;
     padding-left: 60vw;
   }
+
   .btn {
     background-color: purple;
     border-radius: 10px;
