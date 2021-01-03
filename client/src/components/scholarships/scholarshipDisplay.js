@@ -6,14 +6,14 @@ export const ScholarshipDisplay = props => {
     scholarships.map((scholarship) => {
       return(
       <div key={scholarship._id} className="card">
-          <div className="header">
-            { scholarship.title }
-          </div>
-          <div className="apply">
+        <div className="apply">
           <form className="button" action={scholarship.website} target="_blank" rel="noopener noreferrer">
             <input className="btn" type="submit" value="Apply Now" />
           </form>
           </div>  
+          <div className="header">
+            { scholarship.title }
+          </div>
           <div className="deadline">
           <strong>Deadline: </strong>{ scholarship.deadline }
           </div>

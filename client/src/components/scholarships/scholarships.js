@@ -35,7 +35,7 @@ export default function Scholarships() {
     return (
         <div className="App">
           <div className="main">
-          <h2>Scholarships</h2>
+          <h2>/scholarships</h2>
           </div>
           <div className="add">
             <label className="btnLbl">Want to make a scholarship submission?</label><br/>

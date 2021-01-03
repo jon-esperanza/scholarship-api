@@ -1,6 +1,9 @@
-img {
-    width: 10vw;
+.logo {
+    color: #ac88c2;
 }
 .text {
     color:  #d5aeec;
+}
+.scholarships {
+    float: center;
 }

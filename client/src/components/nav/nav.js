@@ -10,14 +10,14 @@ function Nav() {
       <ul>
         <li>
           <div className="logocontainer">
-          <Link to="/">
-            <img className="logo" src={logo} alt='logo'></img>
+          <Link className="logo" to="/">
+            learnlatino
           </Link>
           </div>
         </li>
         <li className="last">
           <div className="scholarships">
-            <Link className="text" to="/scholarships">Scholarships</Link>
+            <Link className="text" to="/scholarships">scholarships</Link>
           </div>
         </li>
       </ul>
@@ -29,7 +29,6 @@ const Wrapper = styled.div`
   height: 8vh;
   background-color: #3e085c;
   display: flex;
-  align-content: center;
   width: 100%;
   position: fixed;
   top: 0;
@@ -40,24 +39,37 @@ const Wrapper = styled.div`
 
 
   ul {
-    position: fixed;
+    position: relative;
     width: 93%;
   }
   li {
     float: left;
     display: block;
-    margin-left: 20px;
     a {
       text-decoration: none;
-      font-size: 20px;
-      color: #a044d5;
+      font-size: 25px;
+      font-weight: bold;
+      color: #d5aeec;
     }
   }
   .last{
     float: right;
+    a {
+      font-weight: normal;
+      font-size: 17px;
+      color: #a044d5;
+    }
+    a:hover {
+      color: #d5aeec;
+    }
   }
+
   .last:hover {
-    filter: brightness(1.4);
+    border-bottom-style: grooved;
+    border-bottom: 1px solid #d5aeec;
+    transition-delay: .05s;
   }
+
+
 `;
 export default Nav;
