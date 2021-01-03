@@ -1,43 +1,63 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import logo from '../../images/logo.png';
+import './styles.css';
 
 function Nav() {
   return (
-    //<Wrapper>
+    <Wrapper>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <div className="logocontainer">
+          <Link to="/">
+            <img className="logo" src={logo} alt='logo'></img>
+          </Link>
+          </div>
         </li>
-        <li id="last">
-          <Link to="/scholarships">Scholarships</Link>
+        <li className="last">
+          <div className="scholarships">
+            <Link className="text" to="/scholarships">Scholarships</Link>
+          </div>
         </li>
       </ul>
-    //</Wrapper>
+    </Wrapper>
   );
 }
 
 const Wrapper = styled.div`
-  height: 50px;
+  height: 8vh;
+  background-color: #3e085c;
   display: flex;
-  align-items: center;
-  background-color: #f5f5f5;
-  
+  align-content: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+
 
   ul {
-    margin: 0;
-    padding: 0;
+    position: fixed;
+    width: 93%;
   }
-
   li {
-    display: inline-block;
+    float: left;
+    display: block;
     margin-left: 20px;
-
     a {
       text-decoration: none;
       font-size: 20px;
-      color: #333;
+      color: #a044d5;
     }
+  }
+  .last{
+    float: right;
+  }
+  .last:hover {
+    filter: brightness(1.4);
   }
 `;
 export default Nav;
