@@ -53,7 +53,8 @@ const Wrapper = styled.div`
     }
   }
   .last{
-    float: right;
+    position: fixed;
+    right: 3%;
     a {
       font-weight: normal;
       font-size: 17px;

@@ -4,6 +4,7 @@
 .App {
     text-align: left;
     display: flex;
+    box-sizing: border-box;
     flex-direction:row;
     text-align: left;
     width: 100%;
@@ -49,7 +50,8 @@
     background-color: purple;
     border-radius: 10px;
     width: 35%;
-    margin-top: 5%;
+    margin-top: 3%;
+    margin-bottom: 1.3%;
     border: none;
     color: white;
     cursor: pointer;
@@ -156,6 +158,44 @@
     color: #11031a;
     justify-content: space-between;
   }
+
+  @media screen and (max-width:750px) {
+    .App {
+      flex-direction: column;
+    }
+    .Cards {
+      top: 42%;
+      left: 2%;
+      width: 89vw;
+    }
+    .add {
+      z-index: 2;
+      bottom:auto;
+      top: 35%;
+      left: 23%;
+      width: 55%;
+      padding: 0;
+    }
+    .searchForm {
+      left: 23%;
+    }
+    .searchBox {
+      width: 53.8%;
+    }
+  }
+  @media screen and (max-width: 414px) {
+    .Cards {
+      left: 0;
+      padding-left: 2%;
+      width:96vw;
+    }
+    .add {
+      top: 35.5%;
+      left: 0;
+      width: 100%;
+    }
+  }
+
   .Cards-enter {
     opacity: 0.01;
     transform: scale(0.9) translateY(50%);
