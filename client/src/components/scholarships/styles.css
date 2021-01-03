@@ -1,0 +1,101 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  body {
+    background-color: #DED9EF;
+  }
+  .Cards{
+    justify-content: right;
+    padding-left: 15vw;
+    
+  }
+  .card {
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+    transition: 0.2s;
+    background-color: #C9C0E5;
+    padding: 20px;
+    margin: 10px;
+  }
+  .card:hover {
+    transform: scale(1.03);
+    background-color: #c597e5;
+    box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
+  }
+  .header {
+    font-weight: bold;
+    font-size: 1.4em;
+    flex: box;
+    text-align: left;
+    width: 60vw;
+    height: 0vw;
+  }
+  .button {
+    align-content: right;
+    padding-left: 60vw;
+  }
+  .btn {
+    background-color: purple;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .btn:hover {
+    transform: scale(1.05);
+    outline-width: 5px;
+    outline-color: rgb(53, 6, 53);
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2);
+  }
+  .deadline{
+    font-size: 0.9em;
+    flex: box;
+    padding-top: 10px;
+    margin-top: 10px;
+    text-align: left;
+  }
+  .award {
+    font-size: 0.9em;
+    margin-top: 10px;
+    text-align: left;
+    
+  }
+  .overview {
+    font-size: 0.9em;
+    margin-top: 10px;
+    text-align: left;
+    justify-content: space-between;
+  }
+  .Cards-enter {
+    opacity: 0.01;
+    transform: scale(0.9) translateY(50%);
+  }
+  .Cards-enter-active {
+    opacity: 1;
+    transform: scale(1) translateY(0%);
+    transition: all 300ms ease-out;
+  }
+  .card-enter {
+    opacity: 0.01;
+    transform: scale(0.9) translateY(50%);
+  }
+  .card-enter-active {
+    opacity: 1;
+    transform: scale(1) translateY(0%);
+    transition: all 300ms ease-out;
+  }
+  .card-exit {
+    opacity: 1;
+    transform: scale(1) translateY(0%);
+  }
+  .card-exit-active {
+    opacity: 0.01;
+    transform: scale(0.9) translateY(50%);
+    transition: all 300ms ease-out;
+  }

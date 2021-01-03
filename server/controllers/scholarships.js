@@ -6,9 +6,9 @@ import Scholarship from '../db/Scholarships.js';
 // scholarships landing page
 export const getIndex = (req, res) => {
     res.send('Tasks available:' + 
-    '\n/all - gets all scholarships in database' +
+    '\n/ - gets all scholarships in database' +
     '\n/scrape - (POSTMAN) webscrapes data and sends to database' + 
-    '\n/search/[searchTerm] - search for items in database' + 
+    '\n/[searchTerm] - search for items in database' + 
     '\n/clear - clears all items in database');
 }
 // db get all route
@@ -77,9 +77,10 @@ export var scrape = function() {
        
         var listItems = $('#content .content h3').each(function(i, elem) {
             var scholarship = {};
+            var $regex = new RegExp(/(\bAmount: | amount:)/);
             scholarship.title = $(elem).text().trim();
             scholarship.deadline = $(elem).next().text().substring(9).trim();
-            scholarship.award = $(elem).next().next().text().substring(6).trim();
+            scholarship.award = $(elem).next().next().text().substring(6).replace($regex, "").trim();
             scholarship.description = $(elem).next().next().next().text().substring(9).trim();
             scholarship.website = $(elem).find('a').attr('href');
             list.push(scholarship);

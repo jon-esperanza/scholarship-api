@@ -5,7 +5,7 @@ export default (scholarships = [], action) => {
         case 'CREATE':
             return scholarships;
         case 'FETCH':
-            return scholarships;
+            return action.payload;
         default:
             return scholarships;
     }

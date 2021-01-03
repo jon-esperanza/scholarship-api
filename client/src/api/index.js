@@ -1,5 +1,8 @@
 import axios from 'axios';
 
-const url = 'http://localhost:5000/scholarships/all';
+const url = 'http://localhost:5000/scholarships/';
 
-export const fetchScholarships = () => axios.get(url);
+const fetchScholarships = () => axios.get(url);
+const fetchSearchResult = (searchTerm) => axios.get(url + searchTerm);
+
+export {fetchSearchResult, fetchScholarships};

@@ -10,3 +10,11 @@ export const getScholarships = () => async(dispatch) => {
         console.log(error.message);
     }
 }
+export const getSearchResult = (searchTerm) => async(dispatch) => {
+    try {
+        const { data } = await api.fetchSearchResult(searchTerm);
+        dispatch({ type: "FETCH", payload: data });
+    } catch (error) {
+        console.log(error.message);
+    }
+}
