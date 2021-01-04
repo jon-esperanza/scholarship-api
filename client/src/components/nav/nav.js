@@ -49,7 +49,7 @@ const Wrapper = styled.div`
     display: flex;
     width: 100%;
     position: fixed;
-    top: 7%;
+    top: 55px;
     left: 0;
     right: 0;
     z-index: 3;

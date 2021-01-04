@@ -2,7 +2,7 @@
   * {
     font-family: 'Encode Sans Expanded', sans-serif;
   }
-html {
+  html {
       height: 100%;
   }
   body {
@@ -69,19 +69,19 @@ html {
       background-color: rgba(211, 211, 211, 0.644);
       top: 52vh;
       left: 31.5vw;
-      height: 135px;
-      width: 5px;
+      height: 18vh;
+      width: .5vw;
   }
   .vl2 {
     position: fixed;
     background-color: rgba(211, 211, 211, 0.644);
     top: 52vh;
     left: 67vw;
-    height: 135px;
-    width: 5px;
+    height: 18vh;
+    width: .5vw;
 }
   .icons {
-      position: relative;
+      position: fixed;
       width: 100%;
       height: 50vh;
       color: black;
@@ -89,29 +89,31 @@ html {
   .search {
       position: fixed;
       display: flex;
+      top: 50vh;
       left: 1%;
       flex-direction: rows;
-      width: 30%;
+      width: 30vw;
       margin-right: 20px;
   }
   .achieve {
     position: fixed;
-    left: 34%;
     display: flex;
+    top: 50vh;
+    left: 35%;
     flex-direction: rows;
-    width: 30%;
+    width: 30vw;
     margin-right: 20px;
 }
   .resources {
     position: fixed;
     left: 70%;
+    top: 50vh;
     display: flex;
     flex-direction: rows;
-    width: 30%;
+    width: 30vw;
     margin-right: 20px;
   }
   li img {
-      width: 30%;
       transform: scale(0.8);
   }
   .label {
@@ -119,6 +121,6 @@ html {
       font-size: 1.2em;
       width: 100%;
       color: #3e085c;
-      padding-top: 5%;
-      padding-left: 2%;
+      padding-top: 7%;
+      padding-left: 0;
   }
