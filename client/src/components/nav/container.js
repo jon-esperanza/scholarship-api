@@ -30,10 +30,14 @@ function Container({ location }) {
 const Wrapper = styled.div`
   .fade-enter {
     opacity: 0.01;
+    -webkit-animation: slide-left 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+    animation: slide-left 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+    transition: opacity 300ms ease-in;
   }
 
   .fade-enter.fade-enter-active {
     opacity: 1;
+    
     transition: opacity 300ms ease-in;
   }
 

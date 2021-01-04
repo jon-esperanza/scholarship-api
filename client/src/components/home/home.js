@@ -1,27 +1,39 @@
+import './styles.css';
+import searchIcon from '../../images/search_icon.png';
+import achieveIcon from '../../images/achieve_icon.png';
+import resourcesIcon from '../../images/resources_icon.png';
 export default function Home() {
     return (
-        <div>
-          <h1>Welcome to LearnLatino</h1>
+        <div className="App">
           <div>
-            <h2>
+            <div class="bg"></div>
+            <div class="bg bg2"></div>
+            <div class="bg bg3"></div>
+          </div>
+          <div className="headline">
+            <h2 className=".shadow-pop-bl">
                 Applying made easier.
             </h2>
-            <button type="button">Get Started</button>
+            <button className="getstarted" type="button">Get Started</button>
           </div>
-          <section>
-            <article>
-              <div>
-                <h3>Use our scholarship database with over $100,000 in awards! </h3>
-                <p>
-                  Using our scholarship API we are able to access an immense database curated by our own developers.
-                </p>
-                <button type="button">Go to database</button>
-              </div>
-              <div>
-                <h3>Join other students and get the resources you need.</h3>
-                <p>Check out our resources page for more information.</p>
-                <button type="button">Go to resources</button>
-              </div>
+          <section className="content">
+            <article className= "quicklinks">
+              <ul className="icons"> 
+                <li className="search">
+                  <img src={searchIcon} alt='search'></img>
+                  <div className="label">Search through our immense database.</div>
+                </li>
+                <div className="vl"></div>
+                <li className="achieve">
+                  <img src={achieveIcon} alt='achieve'></img>
+                  <div className="label">Achieve your academic goals fast, easy, and simple.</div>
+                </li>
+                <div className="vl2"></div>
+                <li className="resources">
+                  <img src={resourcesIcon} alt='resources'></img>
+                  <div className="label">Take advantage of our wide selection of resources.</div>
+                </li>
+              </ul>   
             </article>
           </section>
         </div>

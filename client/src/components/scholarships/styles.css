@@ -17,18 +17,21 @@
     background-size: contain;
   }
   .main {
-    position: fixed;
+    position: relative;
     font-weight: bold;
     font-size: 1.4em;
-    padding-top: 8vh;
+    top: 10vh;
     text-align: left;
-    width: 100%;
+    width: 80vw;
+    margin-bottom: 30vh;
     z-index: 1;
   }
-  h2 {
+  .main h2 {
     font-size: 2em;
     color: #3e085c;
     padding-left: 2%;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
   }
   .add {
     background-color: #E6B8FF;
@@ -58,7 +61,7 @@
   }
 
   .Cards{
-    top: 8%;
+    top: 7%;
     padding-left: 5%;
     left: 40%;
     width: 55%;
@@ -93,6 +96,7 @@
   }
   .searchForm {
     border-radius: .7rem;
+    padding-top: 2vh;
     width: 30%;
     left: 2%;
     top: 28%;
@@ -158,25 +162,34 @@
     color: #11031a;
     justify-content: space-between;
   }
-
+  @media screen and (max-height: 500px) {
+    .main {
+      font-size:1em;
+      top: 5vh;
+    }
+  }
   @media screen and (max-width:750px) {
+    .main {
+      top: 6vh;
+    }
     .App {
       flex-direction: column;
     }
     .Cards {
-      top: 42%;
+      top: 38%;
       left: 2%;
       width: 89vw;
     }
     .add {
       z-index: 2;
       bottom:auto;
-      top: 35%;
+      top: 32%;
       left: 23%;
       width: 55%;
       padding: 0;
     }
     .searchForm {
+      top: 23%;
       left: 23%;
     }
     .searchBox {
