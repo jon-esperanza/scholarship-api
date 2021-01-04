@@ -11,7 +11,7 @@ export default function Home() {
             <div class="bg bg3"></div>
           </div>
           <div className="headline">
-            <h2 className=".shadow-pop-bl">
+            <h2 className="shadow-pop-bl">
                 Applying made easier.
             </h2>
             <button className="getstarted" type="button">Get Started</button>

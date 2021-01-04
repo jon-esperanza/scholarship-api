@@ -98,16 +98,6 @@ const Wrapper = styled.div`
     }
   }
 
-  .scholarship:hover {
-    border-bottom-style: grooved;
-    border-bottom: 1px solid #d5aeec;
-    transition-delay: .05s;
-  }
-  .resources:hover {
-    border-bottom-style: grooved;
-    border-bottom: 1px solid #d5aeec;
-    transition-delay: .05s;
-  }
 
 
 `;
