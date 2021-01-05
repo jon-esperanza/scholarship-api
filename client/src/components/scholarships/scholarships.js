@@ -23,6 +23,7 @@ export default function Scholarships() {
     e.preventDefault();
     dispatch(getSearchResult(searchTerm));
   }
+  /* styling for Fade */
   var cardsStyle = {
     height: "900px",
     backgroundColor: "purple",

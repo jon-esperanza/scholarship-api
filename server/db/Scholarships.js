@@ -1,4 +1,3 @@
-import { truncate } from 'fs';
 import mongoose from 'mongoose';
 
 const scholarship = new mongoose.Schema({

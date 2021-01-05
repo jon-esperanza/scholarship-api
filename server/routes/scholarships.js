@@ -1,11 +1,11 @@
 import express from 'express';
 
-import {getIndex, getAll, scrapeData, getItem, clear} from '../controllers/scholarships.js';
+import {getAll, scrapeData, getItem, clear} from '../controllers/scholarships.js';
 
 const router = express.Router();
 
 
-// http://localhost:5000/scholarships/all
+// http://localhost:5000/scholarships/
 router.get('/', getAll);
 
 // http://localhost:5000/scholarships/scrape

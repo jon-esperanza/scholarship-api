@@ -2,6 +2,7 @@ import './styles.css';
 import searchIcon from '../../images/search_icon.png';
 import achieveIcon from '../../images/achieve_icon.png';
 import resourcesIcon from '../../images/resources_icon.png';
+
 export default function Home() {
     return (
         <div className="App">
@@ -20,17 +21,17 @@ export default function Home() {
             <article className= "quicklinks">
               <ul className="icons"> 
                 <li className="search">
-                  <img className="sIcon" src={searchIcon} alt='search'></img>
+                  <img src={searchIcon} alt='search'></img>
                   <div className="label">Search through our immense database.</div>
                 </li>
                 <div className="vl"></div>
                 <li className="achieve">
-                  <img className="aIcon" src={achieveIcon} alt='search'></img>
+                  <img src={achieveIcon} alt='search'></img>
                   <div className="label">Search through our immense database.</div>
                 </li>
                 <div className="vl2"></div>
                 <li className="resources">
-                  <img className="rIcon" src={resourcesIcon} alt='resources'></img>
+                  <img src={resourcesIcon} alt='resources'></img>
                   <div className="label">Take advantage of our wide selection of resources.</div>
                 </li>
               </ul>   

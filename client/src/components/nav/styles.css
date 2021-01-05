@@ -1,0 +1,102 @@
+    /* nav.js styling */
+.nav-main {  /* nav bar container*/
+    height: 55px;
+    background-color: #3e085c;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+}
+.small { /* small line under navbar*/
+    height: 5px;
+    background-color: #E6B8FF;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 55px;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+}
+.nav-ul { /* link container */
+    position: fixed;
+    width: 100%;
+}
+.nav-home { /* home page item */
+    float: left;
+    display: block;
+}
+.nav-home a { /* home page link */
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: #d5aeec;
+}
+.nav-resources{ /* resources item */
+    position: fixed;
+    display: block;
+    right: 9%;
+    margin-left: 20px;
+}
+.nav-resources a { /* resources link */
+    font-weight: normal;
+    font-size: 17px;
+    color: #5d3a6e;
+}
+.nav-resources a:hover {
+    color: #d5aeec;
+}
+.nav-scholarships{ /* scholarships item */
+    position: fixed;
+    display: block;
+    right: 18%;
+    margin-left: 20px;
+}
+.nav-scholarships a { /* scholarships link */
+    font-weight: normal;
+    font-size: 17px;
+    color: #5d3a6e;
+}
+.nav-scholarships a:hover {
+    color: #d5aeec;
+}
+
+
+/* container.js styling */
+.fade-enter {
+    opacity: 0.01;
+    -webkit-animation: slide-left 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+    animation: slide-left 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+    transition: opacity 300ms ease-in;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    
+    transition: opacity 300ms ease-in;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}
+
+div.transition-group {
+    position: relative;
+}
+
+section.route-section {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}

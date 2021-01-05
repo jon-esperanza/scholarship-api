@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-const uri = 'mongodb+srv://admin:i6bnLL5KONzjQkI4@scholarship-rest.yqu9v.mongodb.net/list?retryWrites=true&w=majority';
+dotenv.config();
+const uri = process.env.MONGO_KEY;
 
 
 const connectDB = async()=> {

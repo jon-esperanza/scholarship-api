@@ -69,6 +69,7 @@ export const clear = (req, res) => {
             res.json(err);
         })
 }
+// helper function to scrape data 
 export var scrape = function() {
     var list= [];
     return axios.get('https://collegesofdistinction.com/advice/the-mega-list-of-scholarships-you-should-apply-for-class-of-2019-2020/')

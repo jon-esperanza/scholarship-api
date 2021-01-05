@@ -1,238 +1,252 @@
+/* main page styling */
 * {
   font-family: 'Encode Sans Expanded', sans-serif;
 }
+body {
+  background-color: #efabff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23efabff' cx='50' cy='0' r='50'/%3E%3Cg fill='%23eba7fc' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e7a3fa' cx='50' cy='100' r='50'/%3E%3Cg fill='%23e39ff7' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23df9bf4' cx='50' cy='200' r='50'/%3E%3Cg fill='%23db97f2' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23d792ef' cx='50' cy='300' r='50'/%3E%3Cg fill='%23d28eec' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ce89e9' cx='50' cy='400' r='50'/%3E%3Cg fill='%23c984e6' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c57fe3' cx='50' cy='500' r='50'/%3E%3Cg fill='%23c07ae0' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23bb75dd' cx='50' cy='600' r='50'/%3E%3Cg fill='%23b66fda' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b169d7' cx='50' cy='700' r='50'/%3E%3Cg fill='%23ab63d4' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a65cd1' cx='50' cy='800' r='50'/%3E%3Cg fill='%23a055ce' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%239a4ccb' cx='50' cy='900' r='50'/%3E%3Cg fill='%239443c7' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%238e39c4' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: contain;
+}
 .App {
-    text-align: left;
-    display: flex;
-    box-sizing: border-box;
-    flex-direction:row;
-    text-align: left;
-    width: 100%;
-  }
+  text-align: left;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction:row;
+  text-align: left;
+  width: 100%;
+}
+
+/* header styling */
+.main {
+  position: relative;
+  font-weight: bold;
+  font-size: 1.4em;
+  top: 10vh;
+  text-align: left;
+  width: 80vw;
+  margin-bottom: 30vh;
+  z-index: 1;
+}
+.main h2 {
+  font-size: 2em;
+  color: #3e085c;
+  padding-left: 3%;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+/* submission 'ad' styling */
+.add {
+  background-color: #E6B8FF;
+  position: fixed;
+  width: 288px;
+  bottom: 3%;
+  left: 2%;
+  border-radius: .7rem;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+  text-align: center;
+  z-index: 1;
+  padding: .5% .5%;
+
+}
+.btnLbl { /* words above button */
+  font-size: .9em;
+}
+.click { /* click here button */
+  background-color: purple;
+  border-radius: 10px;
+  width: 35%;
+  margin-top: 3%;
+  margin-bottom: 1.3%;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* scrollable cards container styling */
+.Cards{
+  top: 7%;
+  padding-left: 5%;
+  left: 40%;
+  width: 55%;
+  overflow-y:auto; 
+  max-height:100vh; 
+  float: right;
+  z-index: 1;
+  position: fixed;
   
-  body {
-    background-color: #efabff;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23efabff' cx='50' cy='0' r='50'/%3E%3Cg fill='%23eba7fc' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e7a3fa' cx='50' cy='100' r='50'/%3E%3Cg fill='%23e39ff7' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23df9bf4' cx='50' cy='200' r='50'/%3E%3Cg fill='%23db97f2' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23d792ef' cx='50' cy='300' r='50'/%3E%3Cg fill='%23d28eec' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ce89e9' cx='50' cy='400' r='50'/%3E%3Cg fill='%23c984e6' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c57fe3' cx='50' cy='500' r='50'/%3E%3Cg fill='%23c07ae0' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23bb75dd' cx='50' cy='600' r='50'/%3E%3Cg fill='%23b66fda' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b169d7' cx='50' cy='700' r='50'/%3E%3Cg fill='%23ab63d4' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a65cd1' cx='50' cy='800' r='50'/%3E%3Cg fill='%23a055ce' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%239a4ccb' cx='50' cy='900' r='50'/%3E%3Cg fill='%239443c7' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%238e39c4' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
-    background-attachment: fixed;
-    background-size: contain;
-  }
+}
+/* actual card styling */
+.card {
+  max-width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+  transition: 0.2s;
+  background-color: #e6b8ff88;
+  padding: 20px;
+  margin: .5%;
+}
+.card:hover {
+  transform: scale(1.03);
+  background-color: #E6B8FF;
+  box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
+}
+
+/* search bar styling */
+.searchForm { /* container */
+  border-radius: .7rem;
+  padding-top: 2vh;
+  width: 30%;
+  left: 2%;
+  top: 28%;
+  position: fixed;
+}
+.searchBox { /* actual search bar */
+  font-size: .8em;
+  font-weight: light;
+  font-family: 'Encode Sans Expanded', sans-serif;
+  position: fixed;
+  appearance: none;
+  height: 4vh;
+  width: 288px;
+  border-radius: .7rem;
+  transition: all .3s cubic-bezier(0, 0, 0.43, 1.49);
+  transition-property: width, border-radius;
+  z-index: 1;
+}
+.searchBox:focus {
+  outline: none;
+}
+
+/* items on card styling */
+.header {
+  font-weight: bold;
+  font-size: 1.4em;
+  display: -webkit-box;
+  text-align: left;
+  width: 60%;
+  color: #11031a;
+}
+.apply { /* apply now container */
+  float: right;
+  padding-right: 5%;
+}
+.button { /* apply now form */
+  width: 100%;
+}
+.btn { /* apply now button */
+  background-color: purple;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  padding: 10%;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.05);
+  outline-width: 5px;
+  outline-color: rgb(53, 6, 53);
+  box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2);
+}
+
+.deadline{
+  font-size: 0.9em;
+  display: -webkit-box;
+  margin-top: 10px;
+  text-align: left;
+  color: #11031a;
+}
+.award {
+  font-size: 0.9em;
+  margin-top: 10px;
+  text-align: left;
+  color: #11031a;
+  
+}
+.overview {
+  font-size: 0.9em;
+  margin-top: 10px;
+  text-align: left;
+  color: #11031a;
+  justify-content: space-between;
+}
+
+/* responsive design styling */
+@media screen and (max-height: 500px) {
   .main {
-    position: relative;
-    font-weight: bold;
-    font-size: 1.4em;
-    top: 10vh;
-    text-align: left;
-    width: 80vw;
-    margin-bottom: 30vh;
-    z-index: 1;
+    font-size:1em;
+    top: 5vh;
   }
-  .main h2 {
-    font-size: 2em;
-    color: #3e085c;
-    padding-left: 2%;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
+}
+@media screen and (max-width:750px) {
+  .main {
+    top: 6vh;
+  }
+  .App {
+    flex-direction: column;
+  }
+  .Cards {
+    top: 38%;
+    left: 2%;
+    width: 89vw;
   }
   .add {
-    background-color: #E6B8FF;
-    position: fixed;
-    width: 288px;
-    bottom: 3%;
-    left: 2%;
-    border-radius: .7rem;
-    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
-    text-align: center;
-    z-index: 1;
-    padding: .5% .5%;
-
-  }
-  .btnLbl {
-    font-size: .9em;
-  }
-  .click {
-    background-color: purple;
-    border-radius: 10px;
-    width: 35%;
-    margin-top: 3%;
-    margin-bottom: 1.3%;
-    border: none;
-    color: white;
-    cursor: pointer;
-  }
-
-  .Cards{
-    top: 7%;
-    padding-left: 5%;
-    left: 40%;
+    z-index: 2;
+    bottom:auto;
+    top: 32%;
+    left: 23%;
     width: 55%;
-    overflow-y:auto; 
-    max-height:100vh; 
-    float: right;
-    z-index: 1;
-    position: fixed;
-    
-  }
-  .card {
-    max-width: 90%;
-    border-radius: 10px;
-    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
-    transition: 0.2s;
-    background-color: #e6b8ff88;
-    padding: 20px;
-    margin: .5%;
-  }
-  .card:hover {
-    transform: scale(1.03);
-    background-color: #E6B8FF;
-    box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
-  }
-  .header {
-    font-weight: bold;
-    font-size: 1.4em;
-    display: -webkit-box;
-    text-align: left;
-    width: 60%;
-    color: #11031a;
+    padding: 0;
   }
   .searchForm {
-    border-radius: .7rem;
-    padding-top: 2vh;
-    width: 30%;
-    left: 2%;
-    top: 28%;
-    position: fixed;
+    top: 23%;
+    left: 23%;
   }
   .searchBox {
-    font-size: .8em;
-    font-weight: light;
-    font-family: 'Encode Sans Expanded', sans-serif;
-    position: fixed;
-    appearance: none;
-    height: 4vh;
-    width: 288px;
-    border-radius: .7rem;
-    transition: all .3s cubic-bezier(0, 0, 0.43, 1.49);
-    transition-property: width, border-radius;
-    z-index: 1;
+    width: 53.8%;
   }
-  .searchBox:focus {
-    outline: none;
+}
+@media screen and (max-width: 414px) {
+  .Cards {
+    left: 0;
+    padding-left: 2%;
+    width:96vw;
   }
-  .apply {
-    float: right;
-    padding-right: 5%;
-  }
-  .button {
+  .add {
+    top: 35.5%;
+    left: 0;
     width: 100%;
   }
-  .btn {
-    background-color: purple;
-    border-radius: 10px;
-    border: none;
-    color: white;
-    padding: 10%;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
-  .btn:hover {
-    transform: scale(1.05);
-    outline-width: 5px;
-    outline-color: rgb(53, 6, 53);
-    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2);
-  }
-  .deadline{
-    font-size: 0.9em;
-    display: -webkit-box;
-    margin-top: 10px;
-    text-align: left;
-    color: #11031a;
-  }
-  .award {
-    font-size: 0.9em;
-    margin-top: 10px;
-    text-align: left;
-    color: #11031a;
-    
-  }
-  .overview {
-    font-size: 0.9em;
-    margin-top: 10px;
-    text-align: left;
-    color: #11031a;
-    justify-content: space-between;
-  }
-  @media screen and (max-height: 500px) {
-    .main {
-      font-size:1em;
-      top: 5vh;
-    }
-  }
-  @media screen and (max-width:750px) {
-    .main {
-      top: 6vh;
-    }
-    .App {
-      flex-direction: column;
-    }
-    .Cards {
-      top: 38%;
-      left: 2%;
-      width: 89vw;
-    }
-    .add {
-      z-index: 2;
-      bottom:auto;
-      top: 32%;
-      left: 23%;
-      width: 55%;
-      padding: 0;
-    }
-    .searchForm {
-      top: 23%;
-      left: 23%;
-    }
-    .searchBox {
-      width: 53.8%;
-    }
-  }
-  @media screen and (max-width: 414px) {
-    .Cards {
-      left: 0;
-      padding-left: 2%;
-      width:96vw;
-    }
-    .add {
-      top: 35.5%;
-      left: 0;
-      width: 100%;
-    }
-  }
+}
 
-  .Cards-enter {
-    opacity: 0.01;
-    transform: scale(0.9) translateY(50%);
-  }
-  .Cards-enter-active {
-    opacity: 1;
-    transform: scale(1) translateY(0%);
-    transition: all 300ms ease-out;
-  }
-  .card-enter {
-    opacity: 0.01;
-    transform: scale(0.9) translateY(50%);
-  }
-  .card-enter-active {
-    opacity: 1;
-    transform: scale(1) translateY(0%);
-    transition: all 300ms ease-out;
-  }
-  .card-exit {
-    opacity: 1;
-    transform: scale(1) translateY(0%);
-  }
-  .card-exit-active {
-    opacity: 0.01;
-    transform: scale(0.9) translateY(50%);
-    transition: all 300ms ease-out;
-  }
+/* card animation styling */
+.Cards-enter {
+  opacity: 0.01;
+  transform: scale(0.9) translateY(50%);
+}
+.Cards-enter-active {
+  opacity: 1;
+  transform: scale(1) translateY(0%);
+  transition: all 300ms ease-out;
+}
+.card-enter {
+  opacity: 0.01;
+  transform: scale(0.9) translateY(50%);
+}
+.card-enter-active {
+  opacity: 1;
+  transform: scale(1) translateY(0%);
+  transition: all 300ms ease-out;
+}
+.card-exit {
+  opacity: 1;
+  transform: scale(1) translateY(0%);
+}
+.card-exit-active {
+  opacity: 0.01;
+  transform: scale(0.9) translateY(50%);
+  transition: all 300ms ease-out;
+}

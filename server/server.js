@@ -1,9 +1,10 @@
 import express from 'express';
-import mongoose from 'mongoose';
 import connectDB from './db/connection.js';
 import scholarships from './routes/scholarships.js';
+import dotenv from 'dotenv';
+dotenv.config();
 import cors from 'cors';
-const port = process.env.PORT || 5000;
+const port = process.env.PORT;
 const api = express();
 
 
