@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 // REST api url : backend must be running 
-const url = 'http://localhost:5000/scholarships/';
+const url = 'https://scholarship-api.herokuapp.com/scholarships/';
 
 
 // functions to make api calls

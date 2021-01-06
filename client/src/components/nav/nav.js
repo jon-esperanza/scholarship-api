@@ -9,7 +9,7 @@ function Nav() {
       <ul className ="nav-ul">
         <li className = "nav-home">
           <div className="logocontainer">
-          <Link  to="/">learnlatino</Link>
+          <Link  to="/">learnapply</Link>
           </div>
         </li>
         <li className="nav-scholarships">
